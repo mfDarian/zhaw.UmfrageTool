@@ -4,6 +4,9 @@ public class Antwort {
 	
 	private Frage frage;
 	private int punkteGewaehlt;
-	private int punkteNichtgewaehlt;
+	private int punkteNichtGewaehlt;
 
+	protected Antwort() {
+		
+	}
 }

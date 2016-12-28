@@ -6,5 +6,9 @@ public class Frage {
 	
 	private Fragebogen fragebogen;
 	private ArrayList<Antwort> antworten;
+	
+	protected Frage() {
+		
+	}
 
 }
