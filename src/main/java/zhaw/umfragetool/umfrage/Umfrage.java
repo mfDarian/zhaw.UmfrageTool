@@ -1,6 +1,8 @@
 package zhaw.umfragetool.umfrage;
 
-public class Umfrage {
+import java.io.Serializable;
+
+public class Umfrage implements Serializable{
 	
 	protected Umfrage() {
 		

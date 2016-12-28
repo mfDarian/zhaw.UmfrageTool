@@ -6,18 +6,30 @@ public class FragebogenEditor {
 	private Fragebogen fragebogen;
 	
 	private FragebogenEditor() {
-		
+		fragebogen = new Fragebogen("Neuer Fragebogen");
 	}
 	
-	public FragebogenEditor getEditor() {
+	public static FragebogenEditor getEditor() {
 		if (editor == null) {
 			editor = new FragebogenEditor();
 		}
 		return editor;
 	}
 	
-	public void setFragebogen(Fragebogen fragebogen) {
+	private void setFragebogen(Fragebogen fragebogen) {
 		this.fragebogen = fragebogen;
 	}
+	
+	public void setFragebogenName(String name) {
+		fragebogen.setName(name);
+	}
+	
+	public Fragebogen getFragebogen() {
+		return fragebogen;
+	}
+	
+//	public void einzelauswahlFrageEinfuegen (String text) {
+//		fragebogen.einzelauswahlFrageEinfuegen(text);
+//	}
 
 }

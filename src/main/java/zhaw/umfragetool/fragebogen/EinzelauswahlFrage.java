@@ -2,14 +2,14 @@ package zhaw.umfragetool.fragebogen;
 
 public class EinzelauswahlFrage extends Frage {
 
-	protected EinzelauswahlFrage(Fragebogen fragebogen) {
-		super(fragebogen, true);
+	public EinzelauswahlFrage(Fragebogen fragebogen, String text) {
+		super(text, fragebogen, true);
 		this.setMinimalAnzahlAntworten(1);
 		this.setMaximalAnzahlAntworten(1);
 	}
 	
-	protected EinzelauswahlFrage(Fragebogen fragebogen, boolean beantwortungsPflichtig) {
-		super(fragebogen, beantwortungsPflichtig);
+	public EinzelauswahlFrage(Fragebogen fragebogen, String text, boolean beantwortungsPflichtig) {
+		super(text, fragebogen, beantwortungsPflichtig);
 		if (beantwortungsPflichtig) {
 			this.setMinimalAnzahlAntworten(1);
 		}
