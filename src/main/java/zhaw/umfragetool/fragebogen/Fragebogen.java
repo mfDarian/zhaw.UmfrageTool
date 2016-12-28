@@ -9,5 +9,5 @@ public class Fragebogen {
 	protected Fragebogen() {
 		
 	}
-
+	
 }

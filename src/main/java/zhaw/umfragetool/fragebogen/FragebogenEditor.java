@@ -15,5 +15,9 @@ public class FragebogenEditor {
 		}
 		return editor;
 	}
+	
+	public void setFragebogen(Fragebogen fragebogen) {
+		this.fragebogen = fragebogen;
+	}
 
 }

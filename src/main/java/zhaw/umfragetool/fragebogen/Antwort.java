@@ -3,10 +3,10 @@ package zhaw.umfragetool.fragebogen;
 public class Antwort {
 	
 	private Frage frage;
-	private int punkteGewaehlt;
-	private int punkteNichtGewaehlt;
+	private int punkteWennGewaehlt;
+	private int punkteWennNichtGewaehlt;
 
-	protected Antwort() {
-		
+	protected Antwort(Frage frage) {
+		this.frage = frage;
 	}
 }
